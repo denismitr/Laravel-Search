@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Denismitr\Search;
+namespace Denismitr\Search;
 
 interface Searchable
 {

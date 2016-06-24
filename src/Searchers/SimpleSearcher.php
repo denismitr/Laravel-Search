@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Denismitr\Search\Searchers;
+namespace Denismitr\Search\Searchers;
 
 
 abstract class SimpleSearcher extends Searcher

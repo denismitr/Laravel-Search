@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Denismitr\Search\Searchers;
+namespace Denismitr\Search\Searchers;
 
 
 abstract class Searcher
@@ -42,7 +42,9 @@ abstract class Searcher
     protected function gatherResults()
     {
         foreach($this->queries as $query) {
-            $this->results[] = $this->query($query);
+            if (mb_strlen($query) > 2) {
+                $this->results[] = $this->query($query);
+            }
         }
     }
 

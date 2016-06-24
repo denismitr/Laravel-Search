@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Denismitr\Search;
+namespace Denismitr\Search;
 
 use App\Denismitr\Search\Exceptions\WrongSearchResultsType;
 use App\Denismitr\Search\Exceptions\WrongSearcher;
