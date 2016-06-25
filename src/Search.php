@@ -31,12 +31,22 @@ class Search
      */
     public function __construct($query, array $searchers = [])
     {
-        $this->query = $query;
+        $this->query = trim($query);
         $this->searchers = $searchers;
 
         if (!empty($searchers)) {
             $this->initializeSearchers();
         }
+    }
+
+    /**
+    * Instantiate the Search class
+    *
+    * @param [string] $query
+    * @return Search Object
+    */
+    public static function query($query) {
+        return new static($query); 
     }
 
     /**
