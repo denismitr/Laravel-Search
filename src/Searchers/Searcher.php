@@ -11,7 +11,7 @@ abstract class Searcher
     //Results of single queries
     protected $results = [];
 
-    //Model name
+    //Model class
     protected $model = null;
 
     //Table search field
