@@ -19,7 +19,6 @@ However it worked like a charm, so I've decided to publish it.
 Now here is the tricky part: there are two `abstract` searcher classes `SimpleSearcher` and `RelationalSearcher` 
 from which to inherit all the __searcher__ classes and a common interface `Searchable` to implement. 
 `SimpleSearcher` is of course for simple Eloquent model search and `RelationalSearcher` for when a __relationship__ invloved. 
-Like so:
 
 ```php
 <?php
@@ -41,7 +40,7 @@ class TitleSearcher extends SimpleSearcher implements Searchable
 }
 ```
 
-and another more complex `RelationalSearcher` for searching parent models like a topic of a post
+and another more complex `RelationalSearcher` for searching parent models like topics of a post like so:
 
 ```php
 <?php
@@ -63,7 +62,7 @@ class TopicNameSearcher extends RelationalSearcher implements Searchable
 }
 ```
 
-Than you put all that stuff in the `withSearchers` method of the __Search__ class and you good to go.
+Than you put all that stuff in the `withSearchers` method of the __Search__ class and you are good to go.
 
 ##Attention
 Every `Search` instance on `get()` returns a collection of single Eloquent model filtering out all duplicates. If
