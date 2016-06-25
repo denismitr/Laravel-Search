@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Denismitr\Search\Exceptions;
+namespace Denismitr\Search\Exceptions;
 
 
 class WrongSearchResultsType extends \Exception

@@ -3,6 +3,6 @@
 namespace Denismitr\Search\Exceptions;
 
 
-class WrongSearcher extends \Exception
+class WrongRelationProvided extends \Exception
 {
 }

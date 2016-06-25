@@ -2,8 +2,8 @@
 
 namespace Denismitr\Search;
 
-use App\Denismitr\Search\Exceptions\WrongSearchResultsType;
-use App\Denismitr\Search\Exceptions\WrongSearcher;
+use Denismitr\Search\Exceptions\WrongSearchResultsType;
+use Denismitr\Search\Exceptions\WrongSearcher;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 /**
