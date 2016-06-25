@@ -9,7 +9,10 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "php": ">=5.5",
+        "laravel/framework": "5.*"
+    },
     "autoload": {
         "psr-4": {
             "Denismitr\\Search\\": "src/"
